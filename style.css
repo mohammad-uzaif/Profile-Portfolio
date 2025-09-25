@@ -69,5 +69,38 @@ body{
 /* Contact information */
 .contact{
     margin-top: 30px;
-    border-top: 2px solid #3a3a3a;
+    border-top: 2px solid #545353;
+    padding-top: 20px;
+}
+
+.label{
+    font-weight: 500;
+    font-size: 0.8rem;
+    color: #a0a0a0;
+
+}
+
+.value{
+    color: #e0e0e0;
+    text-decoration: none;
+
+}
+
+.email, .phone{
+    margin-bottom: 15px;
+}
+
+/* social media */
+.social{
+    margin-top: 30px;
+    border-top: 2px solid #545353;
+    padding-top: 20px;
+    text-align: center;
+}
+
+.social img{
+    height: 20px;
+    width: 20px;
+    margin-left: 5px;
+    filter: grayscale(1) invert(0.7);
 }
