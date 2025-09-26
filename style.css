@@ -5,7 +5,7 @@
 }
 
 body{
-    background-color: #2a2a2a;
+    background-color: #1e1e1e;
     font-family: sans-serif;
     color: #a0a0a0;
     line-height: 1.6;
@@ -22,14 +22,15 @@ body{
 
 .sidebar{
     height: 90vh;
-    background-color: #3a3a3a; 
+    background-color: #2a2a2a; 
     border: 1px solid #3a3a3a;
     border-radius: 16px;  
     padding: 40px;
+    position: sticky;
+    top: 40px;
 }
 
 .main-content{
-    height: 90vh;
     background-color: #3a3a3a;  
     border: 1px solid #3a3a3a;
     border-radius: 16px;
@@ -57,20 +58,20 @@ body{
 }
 
 .profile p{
-    background-color: #2a2a2a;
+    background-color: #1e1e1e;
+    padding: 5px 15px;
     color: #FFBF00;
-    border: 1px solid #2a2a2a;
+    border: 1px solid #3a3a3a;
     font-size: 0.8rem;
-    border-radius: 20px;
+    border-radius: 8px;
     display: inline-block;
     margin-top: 10px;
-    padding: 5px 5px ;
 }
 
 /* Contact information */
 .contact{
     margin-top: 30px;
-    border-top: 2px solid #545353;
+    border-top: 2px solid #3a3a3a;
     padding-top: 20px;
 }
 
@@ -94,7 +95,7 @@ body{
 /* social media */
 .social{
     margin-top: 30px;
-    border-top: 2px solid #545353;
+    border-top: 2px solid #3a3a3a;
     padding-top: 20px;
     text-align: center;
 }
@@ -150,4 +151,49 @@ nav a{
 
 .content{
     text-align: justify;
+}
+
+#about{
+    margin-bottom: 40px;
+}
+
+/* Skills section */
+
+.grid-container{
+    display: grid;
+    flex-wrap:wrap;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 30px;
+}
+
+.item{
+    padding: 20px;
+    border-radius: 10px;
+    border: 2px solid #545353;
+    background-color: #1e1e1e;
+    text-align: center;
+    margin-top: 20px;
+    transition: transform 0.3s ease, boxshadow 0.3s ease;
+}
+
+.item img{
+    height: 48px;
+    width: 48px;
+    filter: brightness(0) saturate(100%) invert(68%) sepia(86%) saturate(1296%) hue-rotate(2deg) brightness(101%) contrast(102%);
+    margin-bottom: 15px;
+}
+
+.item h3{
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.item:hover{
+    transform: scale(1.1);
+    box-shadow: 0px 0px 10px 5px  rgba(0, 0, 0, 0.3);
+}
+
+/* education section */
+#education{
+     margin-top: 30px;
 }
