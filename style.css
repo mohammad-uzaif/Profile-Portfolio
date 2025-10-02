@@ -9,6 +9,9 @@ body{
     font-family: sans-serif;
     color: #a0a0a0;
     line-height: 1.6;
+    height: 100dvh;
+    width: 100dvw;
+
 }
 
 .main-container{
