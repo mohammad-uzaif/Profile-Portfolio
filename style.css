@@ -21,6 +21,7 @@ body{
     gap: 40px;
     padding-top: 40px;
     margin: auto;
+    justify-content: center;
 }
 
 .sidebar{
